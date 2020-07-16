@@ -1,4 +1,4 @@
-const { src, dest, watch, series, parallel, gulp } = require('gulp');
+const { src, dest, watch, series, parallel } = require('gulp');
 const browserSync = require('browser-sync').create();
 const useref = require('gulp-useref');
 const uglify = require('gulp-uglify');
@@ -8,27 +8,13 @@ const gulpif = require('gulp-if');
 const nunjucksRender = require('gulp-nunjucks-render');
 const sass = require('gulp-sass');
 
-// function defaultTask(cb) {
-//   return runSequence(
-//     ['sass', 'nunjucks', 'browserSync', 'watch'],
-//     'css',
-//     'nodeModules',
-//     callback
-//   );
-//   cb();
-// }
-
 function sassTask() {
   return src('app/sass/**/*.scss')
     .pipe(sass()) //using gulp-sass
     .pipe(init())
     .pipe(write())
     .pipe(dest('app/css'))
-    .pipe(
-      reload({
-        stream: true,
-      })
-    );
+    .pipe(browserSync.stream());
 }
 
 function nunjucksTask() {
@@ -95,32 +81,27 @@ function browserSyncReloadTask(done) {
 
 // Watch files
 function watchFilesTask() {
-  'use strict';
   watch('app/sass/**/*.scss', sassTask);
   //Reloads the browser whenever HTML or JS files changes
   watch(
     'app/pages/**/*.+(html|nunjucks)',
-    gulp.parallel(nunjucksTask, browserSyncReloadTask)
+    parallel(nunjucksTask, browserSyncReloadTask)
   );
   watch(
     'app/templates/*.+(html|nunjucks)',
-    gulp.parallel(nunjucksTask, browserSyncReloadTask)
+    parallel(nunjucksTask, browserSyncReloadTask)
   );
   watch(
     'app/templates/partials/*.+(html|nunjucks)',
-    gulp.parallel(nunjucksTask, browserSyncReloadTask)
+    parallel(nunjucksTask, browserSyncReloadTask)
   );
-  watch('./node_modules/**/*', gulp.series(nodeModules, browserSyncReloadTask));
 }
 
-const watchTask = gulp.series(watchFilesTask, browserSyncTask);
-
-exports.production = productionTask;
+// exports.production = productionTask;
 exports.browserSync = browserSyncTask;
-exports.nodeModules = nodeModulesTask;
 exports.css = cssTask;
 exports.fonts = fontsTask;
-exports.clear = clearTask;
+// exports.clear = clearTask;
 exports.images = imagesTask;
 exports.useref = userefTask;
 exports.sass = sassTask;
@@ -129,7 +110,7 @@ exports.default = series(
   sassTask,
   nunjucksTask,
   browserSyncTask,
-  watchTask,
+  watchFilesTask,
   cssTask,
   nodeModulesTask
 );

@@ -1,7 +1,8 @@
-{% extends "layout.html" %} {# Start of title #} {% set pageName = "Home" %} {# End of title #} {% block TITLE_META %}
-<title> {{ pageName }} | {{ siteName }} </title>
-<meta name="description" content="some page description here">
-<meta name="keywords" content="page keywords here">
+{% extends "layout.html" %} {# Start of title #} {% set pageName = "Home" %} {#
+End of title #} {% block TITLE_META %}
+<title>{{ pageName }} | {{ siteName }}</title>
+<meta name="description" content="some page description here" />
+<meta name="keywords" content="page keywords here" />
 <link rel="author" name="{{ author }}" />
 <link rel="canonical" href="pageUrl" /> {% endblock %}
 <!--/END title and meta section-->
@@ -11,107 +12,184 @@
 {% block content %}
 <!-- MIDDLE CONTENT -->
 <!--START Sidebar Menus-->
-{% include "partials/left-sidebar-menu.html" %} {% include "partials/right-sidebar-menu.html" %}
+{% include "partials/left-sidebar-menu.html" %} {% include
+"partials/right-sidebar-menu.html" %}
 <!--/END Sidebar Menus-->
 <!--START HOME MAIN SECTION-->
 <div class="home-main-wrapper">
+  <div class="container">
+    <div class="services-spotlight-wrapper">
+      <ul>
+        <li class="service-spotlight-parent" style="background-color: #2980b9;">
+          <div
+            class="service-spotlight-child"
+            style="background-image: url('images/spotlight-services/toto.jpg');"
+            ;
+          ></div>
+          <!-- /.service-spotlight-child -->
+          <h4>Toto Afya</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+            suscipit. Corporis praesentium tempore minima quod?
+          </p>
+          <a
+            href="single-page.html"
+            class="btn btn-primary btn-link-button btn-spotlight"
+          >
+            Read More <i class="icon-arrow-carrot-right"></i
+          ></a>
+        </li>
+        <li class="service-spotlight-parent" style="background-color: #8e44ad;">
+          <div
+            class="service-spotlight-child"
+            style="
+              background-image: url('images/spotlight-services/voluntary-private-individual.jpg');
+            "
+            ;
+          ></div>
+          <!-- /.service-spotlight-child -->
+          <h4>Voluntary Private Individual</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+            suscipit. Corporis praesentium tempore minima quod?
+          </p>
+          <a
+            href="single-page.html"
+            class="btn btn-primary btn-link-button btn-spotlight"
+          >
+            Read More <i class="icon-arrow-carrot-right"></i
+          ></a>
+        </li>
+        <li class="service-spotlight-parent" style="background-color: #c0392b;">
+          <div
+            class="service-spotlight-child"
+            style="
+              background-image: url('images/spotlight-services/kikoa.jpg');
+            "
+            ;
+          ></div>
+          <!-- /.service-spotlight-child -->
+          <h4>Kikoa</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+            suscipit. Corporis praesentium tempore minima quod?
+          </p>
+          <a
+            href="single-page.html"
+            class="btn btn-primary btn-link-button btn-spotlight"
+          >
+            Read More <i class="icon-arrow-carrot-right"></i
+          ></a>
+        </li>
+        <li class="service-spotlight-parent" style="background-color: #f39c12;">
+          <div
+            class="service-spotlight-child"
+            style="
+              background-image: url('images/spotlight-services/students.jpg');
+            "
+            ;
+          ></div>
+          <!-- /.service-spotlight-child -->
+          <h4>Students</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+            suscipit. Corporis praesentium tempore minima quod?
+          </p>
+          <a
+            href="single-page.html"
+            class="btn btn-primary btn-link-button btn-spotlight"
+          >
+            Read More <i class="icon-arrow-carrot-right"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.services-spotlight-wrapper -->
+  </div>
+  <!-- /.container -->
+  <!--START HELLO SECTION-->
+  <div class="hello-wrapper">
     <div class="container">
-        <div class="services-spotlight-wrapper">
-            <ul>
-                <li class="service-spotlight-parent" style="background-color: #2980b9">
-                    <div class="service-spotlight-child" style=" background-image: url('images/spotlight-services/toto.jpg')" ;>
-                    </div>
-                    <!-- /.service-spotlight-child -->
-                    <h4>Toto Afya</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, suscipit. Corporis praesentium tempore minima quod?</p>
-                    <a href="single-page.html" class="btn btn-primary btn-link-button btn-spotlight"> Read More  <i class="icon-arrow-carrot-right"></i></a>
-                </li>
-                <li class="service-spotlight-parent" style="background-color: #8e44ad">
-                    <div class="service-spotlight-child" style=" background-image: url('images/spotlight-services/voluntary-private-individual.jpg')" ;>
-                    </div>
-                    <!-- /.service-spotlight-child -->
-                    <h4>Voluntary Private Individual</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, suscipit. Corporis praesentium tempore minima quod?</p>
-                    <a href="single-page.html" class="btn btn-primary btn-link-button btn-spotlight"> Read More  <i class="icon-arrow-carrot-right"></i></a>
-                </li>
-                <li class="service-spotlight-parent" style="background-color: #c0392b">
-                    <div class="service-spotlight-child" style=" background-image: url('images/spotlight-services/kikoa.jpg')" ;>
-                    </div>
-                    <!-- /.service-spotlight-child -->
-                    <h4>Kikoa</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, suscipit. Corporis praesentium tempore minima quod?</p>
-                    <a href="single-page.html" class="btn btn-primary btn-link-button btn-spotlight"> Read More  <i class="icon-arrow-carrot-right"></i></a>
-                </li>
-                <li class="service-spotlight-parent" style="background-color: #f39c12">
-                    <div class="service-spotlight-child" style=" background-image: url('images/spotlight-services/students.jpg')" ;>
-                    </div>
-                    <!-- /.service-spotlight-child -->
-                    <h4>Students</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, suscipit. Corporis praesentium tempore minima quod?</p>
-                    <a href="single-page.html" class="btn btn-primary btn-link-button btn-spotlight"> Read More  <i class="icon-arrow-carrot-right"></i></a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.services-spotlight-wrapper -->
+      <!--START SLIDER-->
+      {% include "partials/slider.html" %}
+      <!--/END SLIDER-->
     </div>
     <!-- /.container -->
-    <!--START HELLO SECTION-->
-    <div class="hello-wrapper">
-        <div class="container">
-            <!--START SLIDER-->
-            {% include "partials/slider.html" %}
-            <!--/END SLIDER-->
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /.hello-wrapper -->
-    <!--/END HELLO SECTION-->
-    <div class="container">
-        <div class="home-main-inner-content">
-            <!--START HOME NEWS TEASER-->
-            <div class="home-news-wrapper">
-                <div class="home-news-inner-content">
-                    <div class="home-news-wrapper-title">
-                        <h1>Newsflash</h1>
-                    </div>
-                    <!-- /.home-news-wrapper-title -->
-                    <div class="home-news-content">
-                        <div id="carousel-newsflash" class="carousel carousel-news slide" data-ride="carousel">
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <a href="single-news.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-                                </div>
-                                <div class="item">
-                                    <a href="single-news.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-                                </div>
-                                <div class="item">
-                                    <a href="single-news.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-                                </div>
-                                <div class="item">
-                                    <a href="single-news.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-                                </div>
-                            </div>
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#carousel-newsflash" role="button" data-slide="prev">
-   <i class="icon-arrow-carrot-left-alt"></i>
-    <span class="sr-only">Previous</span>
-  </a>
-                            <a class="right carousel-control" href="#carousel-newsflash" role="button" data-slide="next">
-     <i class="icon-arrow-carrot-right-alt"></i>
-    <span class="sr-only">Next</span>
-  </a>
-                        </div>
-                    </div>
-                    <!-- /.home-news-content -->
+  </div>
+  <!-- /.hello-wrapper -->
+  <!--/END HELLO SECTION-->
+  <div class="container">
+    <div class="home-main-inner-content">
+      <!--START HOME NEWS TEASER-->
+      <div class="home-news-wrapper">
+        <div class="home-news-inner-content">
+          <div class="home-news-wrapper-title">
+            <h1>Newsflash</h1>
+          </div>
+          <!-- /.home-news-wrapper-title -->
+          <div class="home-news-content">
+            <div
+              id="carousel-newsflash"
+              class="carousel carousel-news slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <a href="single-news.html"
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.</a
+                  >
                 </div>
-                <!-- /.home-news-inner-content -->
+                <div class="item">
+                  <a href="single-news.html"
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.</a
+                  >
+                </div>
+                <div class="item">
+                  <a href="single-news.html"
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.</a
+                  >
+                </div>
+                <div class="item">
+                  <a href="single-news.html"
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.</a
+                  >
+                </div>
+              </div>
+              <!-- Controls -->
+              <a
+                class="left carousel-control"
+                href="#carousel-newsflash"
+                role="button"
+                data-slide="prev"
+              >
+                <i class="icon-arrow-carrot-left-alt"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="right carousel-control"
+                href="#carousel-newsflash"
+                role="button"
+                data-slide="next"
+              >
+                <i class="icon-arrow-carrot-right-alt"></i>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <!-- /.home-news-wrapper -->
-            <!--/END HOME NEWS TEASER-->
-            <!--START SERVICES-->
-            <div class="home-services">
-                <ul>
-                    <!-- <li class="service-box  div-match-height">
+          </div>
+          <!-- /.home-news-content -->
+        </div>
+        <!-- /.home-news-inner-content -->
+      </div>
+      <!-- /.home-news-wrapper -->
+      <!--/END HOME NEWS TEASER-->
+      <!--START SERVICES-->
+      <div class="home-services">
+        <ul>
+          <!-- <li class="service-box  div-match-height">
     <a href="single-page.html">
                         <img src="images/services/benefits.jpg" alt="">
                                 <h4>
@@ -122,124 +200,206 @@
                                  <div class="services-more-dummy-btn">  <span class="btn-service">Read More <i class="icon-arrow-carrot-right"></i></span> </div>
             </a>
 </li> -->
-                    <li class="howdoi-box home-events  div-match-height first-service">
-                        <h1> <i class="icon-bell-1"></i> Announcements</h1>
-                        <ul class="list-unstyled">
-                            <li>
-                                <h4><a href="single-page.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, et.</a></h4>
-                                <span class="date">September 01, 2017</span>
-                            </li>
-                            <li>
-                                <h4><a href="single-page.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, et.</a></h4>
-                                <span class="date">September 01, 2017</span>
-                            </li>
-                            <li>
-                                <h4><a href="single-page.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, et.</a></h4>
-                                <span class="date">September 01, 2017</span>
-                            </li>
-                        </ul>
-                        <div class="clearfix"></div>
-                        <p> <strong>More in</strong> <a href="announcements.html">Announcements</a></p>
-                    </li>
-                    <li class="howdoi-box home-events  div-match-height second-service">
-                        <h1> <i class="icon-calendar"></i> Events</h1>
-                        <ul class="list-unstyled">
-                            <!-- <li> -->
-                            <!--  <div class="event-date">
+          <li class="howdoi-box home-events div-match-height first-service">
+            <h1><i class="icon-bell-1"></i> Announcements</h1>
+            <ul class="list-unstyled">
+              <li>
+                <h4>
+                  <a href="single-page.html"
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quae, et.</a
+                  >
+                </h4>
+                <span class="date">September 01, 2017</span>
+              </li>
+              <li>
+                <h4>
+                  <a href="single-page.html"
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quae, et.</a
+                  >
+                </h4>
+                <span class="date">September 01, 2017</span>
+              </li>
+              <li>
+                <h4>
+                  <a href="single-page.html"
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quae, et.</a
+                  >
+                </h4>
+                <span class="date">September 01, 2017</span>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+            <p>
+              <strong>More in</strong>
+              <a href="announcements.html">Announcements</a>
+            </p>
+          </li>
+          <li class="howdoi-box home-events div-match-height second-service">
+            <h1><i class="icon-calendar"></i> Events</h1>
+            <ul class="list-unstyled">
+              <!-- <li> -->
+              <!--  <div class="event-date">
                                     sep <span>23</span>
                                     <i class="arrow-up"></i>
                                 </div> -->
-                            <!-- /.events-date -->
-                            <!-- <div class="event-content">
+              <!-- /.events-date -->
+              <!-- <div class="event-content">
     <h4> <a href="single-event.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quae.</a></h4>
 </div> -->
-                            <!-- /.event-content -->
-                            <!-- </li> -->
-                            <li>
-                                <!-- .event-thumb-thumb>img[src="http://dummyimage.com/75x50/888888/fff"]^+.event-thumb-date>19+span{Oct}^+.event-thumb-text>p>lorem20|c -->
-                                <div class="event-thumb-thumb event-date-text"><img src="http://dummyimage.com/75x50/888888/fff" alt=""></div>
-                                <!-- /.event-thumb-thumb -->
-                                <div class="event-thumb-date event-date-text">
-                                    19
-                                    <span>Oct</span>
-                                </div>
-                                <!-- /.event-thumb-date -->
-                                <div class="event-thumb-text event-date-text">
-                                    <p> <a href="single-event.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ratione officia, animi est doloremque, asperiores voluptate </a></p>
-                                </div>
-                                <!-- /.event-thumb-text -->
-                            </li>
-                            <li>
-                                <!-- .event-thumb-thumb>img[src="http://dummyimage.com/75x50/888888/fff"]^+.event-thumb-date>19+span{Oct}^+.event-thumb-text>p>lorem20|c -->
-                                <div class="event-thumb-thumb event-date-text"><img src="http://dummyimage.com/75x50/888888/fff" alt=""></div>
-                                <!-- /.event-thumb-thumb -->
-                                <div class="event-thumb-date event-date-text">
-                                    19
-                                    <span>Oct</span>
-                                </div>
-                                <!-- /.event-thumb-date -->
-                                <div class="event-thumb-text event-date-text">
-                                    <p> <a href="single-event.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ratione officia, animi est doloremque, asperiores voluptate </a></p>
-                                </div>
-                                <!-- /.event-thumb-text -->
-                            </li>
-                            <li>
-                                <!-- .event-thumb-thumb>img[src="http://dummyimage.com/75x50/888888/fff"]^+.event-thumb-date>19+span{Oct}^+.event-thumb-text>p>lorem20|c -->
-                                <div class="event-thumb-thumb event-date-text"><img src="http://dummyimage.com/75x50/888888/fff" alt=""></div>
-                                <!-- /.event-thumb-thumb -->
-                                <div class="event-thumb-date event-date-text">
-                                    19
-                                    <span>Oct</span>
-                                </div>
-                                <!-- /.event-thumb-date -->
-                                <div class="event-thumb-text event-date-text">
-                                    <p> <a href="single-event.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ratione officia, animi est doloremque, asperiores voluptate </a></p>
-                                </div>
-                                <!-- /.event-thumb-text -->
-                            </li>
-                        </ul>
-                        <div class="clearfix"></div>
-                        <p> <strong>More in</strong> <a href="events.html">Events</a></p>
-                    </li>
-                    <li class="howdoi-box  div-match-height  third-service">
-                        <h1> <i class="icon-bulb"></i> How Do I</h1>
-                        <ul class="list-unstyled">
-                            <li><a href="howdoi-single.html"><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor sit consectetur.</a></li>
-                            <li><a href="howdoi-single.html"><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor sit consectetur.</a></li>
-                            <li><a href="howdoi-single.html"><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor sit consectetur.</a></li>
-                            <li><a href="howdoi-single.html"><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor sit consectetur.</a></li>
-                            <li><a href="howdoi-single.html"><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor sit consectetur.</a></li>
-                            <li><a href="howdoi-single.html"><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor sit consectetur.</a></li>
-                            <li><a href="howdoi-single.html"><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor sit consectetur.</a></li>
-                            <li><a href="howdoi-single.html"><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor sit consectetur.</a></li>
-                        </ul>
-                        <p> <strong>More in</strong> <a href="howdoi.html">How Do I</a></p>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.home-services -->
-            <!--/END SERVICES-->
-        </div>
-        <!-- /.home-main-inner-content -->
+              <!-- /.event-content -->
+              <!-- </li> -->
+              <li>
+                <!-- .event-thumb-thumb>img[src="http://dummyimage.com/75x50/888888/fff"]^+.event-thumb-date>19+span{Oct}^+.event-thumb-text>p>lorem20|c -->
+                <div class="event-thumb-thumb event-date-text">
+                  <img src="http://dummyimage.com/75x50/888888/fff" alt="" />
+                </div>
+                <!-- /.event-thumb-thumb -->
+                <div class="event-thumb-date event-date-text">
+                  19
+                  <span>Oct</span>
+                </div>
+                <!-- /.event-thumb-date -->
+                <div class="event-thumb-text event-date-text">
+                  <p>
+                    <a href="single-event.html"
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Vel ratione officia, animi est doloremque, asperiores
+                      voluptate
+                    </a>
+                  </p>
+                </div>
+                <!-- /.event-thumb-text -->
+              </li>
+              <li>
+                <!-- .event-thumb-thumb>img[src="http://dummyimage.com/75x50/888888/fff"]^+.event-thumb-date>19+span{Oct}^+.event-thumb-text>p>lorem20|c -->
+                <div class="event-thumb-thumb event-date-text">
+                  <img src="http://dummyimage.com/75x50/888888/fff" alt="" />
+                </div>
+                <!-- /.event-thumb-thumb -->
+                <div class="event-thumb-date event-date-text">
+                  19
+                  <span>Oct</span>
+                </div>
+                <!-- /.event-thumb-date -->
+                <div class="event-thumb-text event-date-text">
+                  <p>
+                    <a href="single-event.html"
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Vel ratione officia, animi est doloremque, asperiores
+                      voluptate
+                    </a>
+                  </p>
+                </div>
+                <!-- /.event-thumb-text -->
+              </li>
+              <li>
+                <!-- .event-thumb-thumb>img[src="http://dummyimage.com/75x50/888888/fff"]^+.event-thumb-date>19+span{Oct}^+.event-thumb-text>p>lorem20|c -->
+                <div class="event-thumb-thumb event-date-text">
+                  <img src="http://dummyimage.com/75x50/888888/fff" alt="" />
+                </div>
+                <!-- /.event-thumb-thumb -->
+                <div class="event-thumb-date event-date-text">
+                  19
+                  <span>Oct</span>
+                </div>
+                <!-- /.event-thumb-date -->
+                <div class="event-thumb-text event-date-text">
+                  <p>
+                    <a href="single-event.html"
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Vel ratione officia, animi est doloremque, asperiores
+                      voluptate
+                    </a>
+                  </p>
+                </div>
+                <!-- /.event-thumb-text -->
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+            <p><strong>More in</strong> <a href="events.html">Events</a></p>
+          </li>
+          <li class="howdoi-box div-match-height third-service">
+            <h1><i class="icon-bulb"></i> How Do I</h1>
+            <ul class="list-unstyled">
+              <li>
+                <a href="howdoi-single.html"
+                  ><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor
+                  sit consectetur.</a
+                >
+              </li>
+              <li>
+                <a href="howdoi-single.html"
+                  ><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor
+                  sit consectetur.</a
+                >
+              </li>
+              <li>
+                <a href="howdoi-single.html"
+                  ><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor
+                  sit consectetur.</a
+                >
+              </li>
+              <li>
+                <a href="howdoi-single.html"
+                  ><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor
+                  sit consectetur.</a
+                >
+              </li>
+              <li>
+                <a href="howdoi-single.html"
+                  ><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor
+                  sit consectetur.</a
+                >
+              </li>
+              <li>
+                <a href="howdoi-single.html"
+                  ><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor
+                  sit consectetur.</a
+                >
+              </li>
+              <li>
+                <a href="howdoi-single.html"
+                  ><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor
+                  sit consectetur.</a
+                >
+              </li>
+              <li>
+                <a href="howdoi-single.html"
+                  ><i class="icon-arrow-carrot-2right"></i> Lorem ipsum dolor
+                  sit consectetur.</a
+                >
+              </li>
+            </ul>
+            <p><strong>More in</strong> <a href="howdoi.html">How Do I</a></p>
+          </li>
+        </ul>
+      </div>
+      <!-- /.home-services -->
+      <!--/END SERVICES-->
     </div>
-    <!-- /.container -->
+    <!-- /.home-main-inner-content -->
+  </div>
+  <!-- /.container -->
 </div>
 <!-- /.home-main-wrapper -->
 <!--/END HOME MAIN SECTION-->
 {% endblock %}
 <!--here comes the JS specific for home page-->{% block JS %}
 <script>
-$(document).ready(function() {
+  $(document).ready(function () {
     $('.carousel-main').carousel({
-        "interval": 8500
+      interval: 8500,
     });
-});
+  });
 </script>
 <script>
-$(document).ready(function() {
+  $(document).ready(function () {
     $('.carousel-news').carousel({
-        "interval": 6500
+      interval: 6500,
     });
-});
+  });
 </script>
 {% endblock %}
