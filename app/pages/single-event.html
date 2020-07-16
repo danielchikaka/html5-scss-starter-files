@@ -1,0 +1,35 @@
+{% extends "layout.html" %} {# Start of title #} {% set pageName = "Single Event" %} {# End of title #} {% block TITLE_META %}
+<title> {{ pageName }} | {{ siteName }} </title>
+<meta name="description" content="some page description here">
+<meta name="keywords" content="page keywords here">
+<link rel="author" name="{{ author }}" />
+<link rel="canonical" href="pageUrl" /> {% endblock %}
+<!--/END title and meta section-->
+<!--START PAGE CSS-->
+{% block CSS %} {% endblock %}
+<!--/END PAGE CSS-->
+{% block content %}
+<!-- MIDDLE CONTENT -->
+<div class="main-content-wrapper">
+    {% include "partials/left-sidebar-menu.html" %} {% include "partials/right-sidebar-menu.html" %}
+    <div class="container">
+        <div class="main-content div-match-height">
+            <h1 class="title-decoration">{{ pageName }}</h1>
+            <article>
+                <p class="pull-left"><strong>Location:  locationName</strong></p>
+                <p class="pull-right"><strong>Time:  All Day</strong></p>
+                <div class="clearfix"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora numquam quasi eveniet recusandae illo sit sint. Fugit nihil molestiae illo rem fuga repellendus beatae facilis, sequi illum. Laborum ipsa, numquam inventore sunt ea velit quo ab non doloribus, dolor ullam rem consectetur! Rerum fugit voluptatibus veritatis numquam fugiat sequi hic expedita similique debitis nulla sapiente autem alias, aliquam iste et omnis molestiae distinctio harum doloremque quibusdam itaque nisi! Veniam voluptas fuga voluptatem doloremque aspernatur neque voluptate possimus in nostrum, amet odio explicabo, ratione maiores labore accusamus expedita fugit facere nam similique sint quasi reiciendis adipisci id! Accusantium sit, cumque enim.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio quasi vero architecto incidunt vel harum, id esse accusantium aperiam magnam, ducimus ea ullam sunt in. Id quisquam at, nulla beatae quaerat quas cum ad ipsum accusamus fuga unde sapiente, nesciunt autem pariatur ducimus itaque, recusandae perspiciatis facere voluptates dolores? Quasi ipsum recusandae, sit quas maxime earum, dolore id harum sint! Error eius pariatur molestias nemo quod optio cupiditate fugit aperiam porro? Molestias quia accusamus aperiam id, error harum, numquam veritatis recusandae laudantium debitis repudiandae placeat temporibus architecto voluptatum sequi officiis quam dolores adipisci et porro ab tempora culpa tempore. Ipsam ratione expedita placeat facilis iste doloribus reiciendis doloremque, ex aperiam eaque veniam eligendi fuga voluptates quam quos dolor repellendus minus. Aperiam unde tempora quibusdam vero maiores quidem odit officiis, nobis velit consectetur, consequuntur repellendus repellat ut recusandae nulla odio neque, quo minus illo maxime, ab commodi molestiae id. Accusantium provident, quae ipsum totam autem quidem atque, molestias eum rem laudantium nostrum sit ea nam illum dicta in. Earum alias perferendis provident quibusdam, neque non amet vitae maxime consectetur quasi deserunt, praesentium delectus sed ipsum dolorum eaque. Cum doloribus ipsum laudantium, dolores sequi asperiores, amet iure magni debitis perspiciatis quia.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, dolores consequuntur, assumenda quisquam recusandae quis labore facilis voluptatibus, laudantium quod illum! Libero earum porro esse est sint unde, ipsam velit excepturi, numquam, officiis cumque exercitationem dolore recusandae tempora non error magnam ipsa consequatur architecto? Aliquam nulla molestiae placeat id sint sit tempore animi earum, rerum cupiditate in pariatur aliquid voluptates, repellat dicta assumenda esse dolor. Magnam nemo beatae officiis amet.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias provident placeat iste deserunt eaque explicabo, eveniet voluptates possimus nisi est blanditiis quidem officiis quis quam magni ea in maiores saepe error debitis corporis ducimus nesciunt voluptatum! Quod inventore, non vel, blanditiis enim rem consectetur molestias architecto nostrum voluptatem reprehenderit vitae repellendus nisi at esse modi asperiores ipsum, voluptas sunt officiis nobis deserunt totam. Inventore maxime voluptas eum. Necessitatibus, animi reprehenderit asperiores tempore rerum facere expedita, dolores commodi est amet. Fugit libero velit amet similique error obcaecati illo saepe eum cupiditate harum laboriosam molestiae, quod vero voluptates, suscipit eos? Asperiores reiciendis corporis minima magnam porro quae itaque molestias facilis quibusdam, iusto, consectetur ducimus veritatis, provident odio dolorem culpa. Voluptatum quasi earum voluptatem doloremque odit atque sed maxime assumenda enim distinctio est voluptatibus rerum officiis, quod nisi! Dolor pariatur, totam dolore facere perspiciatis, officiis quidem facilis expedita ipsam velit autem animi, quaerat.</p>
+            </article>
+        </div>
+        <!-- /.main-content -->
+        {% include "partials/right-sidebar.html" %}
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.main-content-wrapper -->
+{% endblock %}
+<!--here comes the JS specific for home page-->{% block JS %} {% endblock %}

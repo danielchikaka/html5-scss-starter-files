@@ -1,0 +1,210 @@
+/**
+     * ----------------------------------------------------------------
+     * Footer SCSS
+     * ----------------------------------------------------------------
+*/
+
+.min-footer-wrapper {
+    background-color: #F2EAE0;
+    border-top: 4px solid darken(#F2EAE0, 10%);
+    padding: 40px 0;
+    h4 {
+        margin: 0px;
+        color: #0d151f;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .last {
+        @include span(3 of 12 last);
+    }
+}
+
+
+.min-footer-widget {
+    @include span(3 of 12);
+    p {
+        // margin: 0;
+    }
+}
+
+
+.footer-news-listing {
+    padding: 0px;
+    li {
+        padding: 10px 0;
+        border-bottom: 1px solid #cccccc;
+        color: #CC9900;
+        &:first-child {
+            padding-top: 0;
+        }
+        span {
+            display: block;
+        }
+        a {
+            font-weight: 700;
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+    margin-bottom: 20px;
+}
+
+
+.footer-listing {
+    li {
+        position: relative;
+        padding-left: 15px;
+        padding-bottom: 5px;
+        i {
+            position: absolute;
+            left: 0px;
+            top: 3px;
+            color: $link-hover-color;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+     * ------------------------------------------------------------
+     * Contacts
+     * ------------------------------------------------------------
+*/
+
+.footer-contact-list {
+    color: #000;
+    li {
+        position: relative;
+        padding: 0 0 10px 40px;
+        i {
+            position: absolute;
+            font-size: 20px;
+            left: 0px;
+            top: 4px;
+        }
+        h5 {
+            text-transform: uppercase;
+            opacity: 0.5;
+            font-family: $font-family-base;
+            font-size: em(13px);
+            font-weight: bold;
+            margin: 0;
+        }
+        p {
+            font-family: $headings-font-family;
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+     * ------------------------------------------------------------
+     * MAIN FOOTER
+     * ------------------------------------------------------------
+*/
+
+#main-footer {
+    background-color: #714002;
+    color: #fff;
+    font-size: $font-size-base - 2;
+    padding: 20px 0;
+    text-align: center;
+
+    a {
+        color: lighten($link-hover-color, 25%);
+
+        &:hover {
+            color: $link-hover-color;
+        }
+    }
+}
+
+
+.copy-listing {
+    margin: 0px;
+
+    li {
+        display: inline;
+        margin-left: 20px;
+    }
+}

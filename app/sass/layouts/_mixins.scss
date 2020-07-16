@@ -1,0 +1,110 @@
+/** 
+* ----------------------------------------------------------------
+* Mixins
+* Author: Daniel Chikaka
+* Email: danielmanji@gmail.com
+* ----------------------------------------------------------------
+*/
+
+@mixin transition($val) {
+    -webkit-transition: all $val ease-out;
+    -moz-transition: all $val ease-out;
+    -o-transition: all $val ease-out;
+    transition: all $val ease-out;
+}
+
+@mixin transitions($val) {
+    -webkit-transition: $val 0.4s ease-in-out;
+    -moz-transition: $val 0.4s ease-in-out;
+    -o-transition: $val 0.4s ease-in-out;
+    -ms-transition: $val 0.4s ease-in-out;
+    transition: $val 0.4s ease-in-out;
+}
+
+@mixin transition-none {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+@mixin boxShadow($val) {
+    -moz-box-shadow: $val;
+    -webkit-box-shadow: $val;
+    box-shadow: $val;
+}
+
+@mixin borderRadius($val) {
+    border-radius: $val;
+    -moz-border-radius: $val;
+    -webkit-border-radius: $val;
+}
+
+@mixin borderLeft($val) {
+    border-top-left-radius: $val;
+    -moz-top-left-radius: $val;
+    -webkit-top-left-radius: $val;
+    border-bottom-left-radius: $val;
+    -moz-bottom-left-radius: $val;
+    -webkit-bottom-left-radius: $val;
+}
+
+@mixin borderRight($val) {
+    border-top-right-radius: $val;
+    -moz-top-right-radius: $val;
+    -webkit-top-right-radius: $val;
+    border-bottom-right-radius: $val;
+    -moz-bottom-right-radius: $val;
+    -webkit-bottom-right-radius: $val;
+}
+
+@mixin borderTop($val) {
+    border-top-right-radius: $val;
+    -moz-top-right-radius: $val;
+    -webkit-top-right-radius: $val;
+    border-top-left-radius: $val;
+    -moz-top-left-radius: $val;
+    -webkit-top-left-radius: $val;
+}
+
+@mixin borderTopRight($val) {
+    border-top-right-radius: $val;
+    -moz-top-right-radius: $val;
+    -webkit-top-right-radius: $val;
+}
+
+@mixin borderBottom($val) {
+    border-bottom-right-radius: $val;
+    -moz-bottom-right-radius: $val;
+    -webkit-bottom-right-radius: $val;
+    border-bottom-left-radius: $val;
+    -moz-bottom-left-radius: $val;
+    -webkit-bottom-left-radius: $val;
+}
+
+@mixin imageZoom {
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+}
+
+@mixin imageZoomHover {
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transition: scale(2);
+}
+
+@mixin clearfixa {
+    &:after {
+        content: " ";
+        display: block;
+        clear: both;
+    }
+}
+
+$browser-context: $font-size-base; // Default
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em;
+}

@@ -1,0 +1,32 @@
+/**
+     * ----------------------------------------------------------------
+     * Notice Board
+     * Author: Daniel Chikaka
+     * Email: dani@danielchikaka.com
+     * ----------------------------------------------------------------
+*/
+
+.notice-board {
+  @extend .publications;
+
+  ul.notice-board-listing {
+    @extend ul.publications-listing;
+
+    li {
+      position: relative;
+      padding-left: 20px;
+      .icon-bell-o {
+        position: absolute;
+        left: 0px;
+        font-size: 26px;
+      }
+      a {
+        display: block;
+        margin-bottom: 10px;
+      }
+      span {
+        margin-left: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+    /**
+     * ----------------------------------------------------------------
+     * Header CSS
+     * Author: Daniel Chikaka
+     * Email: danielmanji@gmail.com
+     * ----------------------------------------------------------------
+  */
+
+    .header-inner-content {
+        position: relative;
+    }
+    /**
+  * ------------------------------------------------------------
+  * Top bar Menu
+  * ------------------------------------------------------------
+  */
+
+    ul.topbar-menu {
+        padding: 0px;
+        text-align: right;
+        margin: 0px;
+        position: absolute;
+        right: 180px;
+        li {
+            float: right;
+            list-style-type: none;
+            a {
+                color: $gray-light;
+                font-size: em(13px);
+                font-weight: 600;
+                display: block;
+                padding: em(10px) 0 em(14px) em(10px);
+                &:hover {
+                    color: lighten($link-color,10%);
+                }
+            }
+            &:first-child {
+                img {
+                    width: em(22px);
+                    height: em(18px);
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        li.active {
+            a {
+                color: lighten($link-color,10%);
+                &:hover {
+                    color: lighten($link-color,30%);
+                }
+            }
+        }
+    }
+    /**
+* ------------------------------------------------------------
+* Main Header
+* ------------------------------------------------------------
+*/
+
+    #main-header {
+       
+        //border-top: 4px solid darken($brand-primary, 10%);
+        // background-image: url('../images/nhif-banners-curves.png');
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        background-image: url("../images/nhif-banners-curves.png");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position-y: bottom;
+      // position: relative;
+        // &::after {
+        //     content: "";
+        //     background-image: url("../images/nhif-banners-curves.png");
+        //     -webkit-background-size: cover;
+        //     -moz-background-size: cover;
+        //     -o-background-size: cover;
+        //     background-size: cover;
+        //     height: inherit;
+        //     top: 0;
+        //     left: 0;
+        //     bottom: 0;
+        //     right: 0;
+        //     position: absolute;
+        //     z-index: -1;   
+        //   }
+    }
+
+    .tagline {
+        @include span(8 of 12);
+        text-align: center;
+        h1 {
+            font-size: em(35px);
+            font-family: arial;
+            line-height: 22px;
+            color: #fff;
+            text-transform: normal;
+            margin: 0px;
+            font-weight: bold;
+            padding-top: em(0px);
+            text-shadow: 1px 1px 1px #000;
+            span {
+                color: #fff;
+                font-size: 18px !important;
+                font-family: $headings-font-family;
+            }
+        }
+        span {
+            font-size: em(16px); // font-family: $headings-font-family;
+            color: #fff;
+            opacity: 0.9;
+            line-height: 40px; // font-family: $font-family-base;
+            font-family: cursive;
+            text-shadow: none;
+        }
+    }
+
+    .logo {
+        @include span(2 of 12);
+        padding: em(20px) 0;
+    }
+
+    .sitelogo {
+        @include span(2 of 12 last);
+        padding: em(14px) 0;
+        text-align: right;
+    }

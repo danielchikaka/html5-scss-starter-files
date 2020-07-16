@@ -1,0 +1,137 @@
+{% extends "layout.html" %} {# Start of title #} {% set pageName = "Videos " %} {# End of title #} {% block TITLE_META %}
+<title> {{ pageName }} | {{ siteName }} </title>
+<meta name="description" content="some page description here">
+<meta name="keywords" content="page keywords here">
+<link rel="author" name="{{ author }}" />
+<link rel="canonical" href="pageUrl" /> {% endblock %}
+<!--/END title and meta section-->
+<!--START PAGE CSS-->
+{% block CSS %}
+<!-- build:css css/magnific-popup.min.css -->
+<link href="bower_components/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+<!-- endbuild -->
+{% endblock %}
+<!--/END PAGE CSS-->
+{% block content %}
+<!-- MIDDLE CONTENT -->
+<div class="container">
+    <div class="main-content-wrapper">
+        {% include "partials/left-sidebar-menu.html" %} {% include "partials/right-sidebar-menu.html" %}
+        <div class="main-content div-match-height">
+            <!--START INNER CONTENT-->
+            <div class="left-sidebar-main-content">
+                <h1 class="title-decoration">{{pageName}}</h1>
+                </h1>
+                <hr class="title-sep">
+                <br>
+                <ul class="videos-listing">
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=GS54Ugb9wGY" class="video-content" title="">
+                            <img src="http://img.youtube.com/vi/GS54Ugb9wGY/0.jpg" alt="">
+                            <i class="icon icon-play-circle"></i>
+                            <span>01:42:45</span>
+                        </a>
+                        <div class="album-info">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum a saepe asperiores.</h4>
+                            <p>Posted on: January 23, 2016</p>
+                        </div>
+                        <!-- /.album-info -->
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=M7Yw2P80P_I" class="video-content" title="">
+                            <img src="http://img.youtube.com/vi/M7Yw2P80P_I/0.jpg" alt="">
+                            <i class="icon icon-play-circle"></i>
+                            <span>01:42:45</span>
+                        </a>
+                        <div class="album-info">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum a saepe asperiores.</h4>
+                            <p>Posted on: January 23, 2016</p>
+                        </div>
+                        <!-- /.album-info -->
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=BUx7iKAJmnA" class="video-content" title="">
+                            <img src="http://img.youtube.com/vi/BUx7iKAJmnA/0.jpg" alt="">
+                            <i class="icon icon-play-circle"></i>
+                            <span>01:42:45</span>
+                        </a>
+                        <div class="album-info">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum a saepe asperiores.</h4>
+                            <p>Posted on: January 23, 2016</p>
+                        </div>
+                        <!-- /.album-info -->
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=pgxxeNRBLWc" class="video-content" title="">
+                            <img src="http://img.youtube.com/vi/pgxxeNRBLWc/0.jpg" alt="">
+                            <i class="icon icon-play-circle"></i>
+                            <span>01:42:45</span>
+                        </a>
+                        <div class="album-info">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum a saepe asperiores.</h4>
+                            <p>Posted on: January 23, 2016</p>
+                        </div>
+                        <!-- /.album-info -->
+                    </li>
+                </ul>
+                <nav class="text-center">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.left-sidebar-main-content -->
+            <!--/END INNER CONTENT-->
+        </div>
+        <!-- /.main-content -->
+    </div>
+    <!-- /.main-content-wrapper -->
+    {% include "partials/right-sidebar.html" %}
+</div>
+<!-- /.container -->
+{% endblock %}
+<!--here comes the JS specific for home page-->{% block JS %}
+<!--build:js js/jquery.magnific-popup.min.js -->
+<script src="bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<!-- endbuild -->
+<script>
+jQuery(document).ready(function() {
+    jQuery('.video-content').magnificPopup({
+        type: 'iframe',
+
+
+        iframe: {
+            markup: '<div class="mfp-iframe-scaler">' +
+                '<div class="mfp-close"></div>' +
+                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+                '<div class="mfp-title">Some caption</div>' +
+                '</div>',
+            patterns: {
+                youtube: {
+                    index: 'youtube.com',
+                    id: 'v=',
+                    src: '//www.youtube.com/embed/%id%?rel=0&autoplay=1'
+                }
+            }
+        },
+        callbacks: {
+            markupParse: function(template, values, item) {
+                values.title = item.el.attr('title');
+            }
+        }
+
+
+    });
+});
+</script>
+{% endblock %}

@@ -1,0 +1,49 @@
+/**
+     * ----------------------------------------------------------------
+     * Tenders
+     * Author: Daniel Chikaka
+     * Email: dani@danielchikaka.com
+     * ----------------------------------------------------------------
+*/
+
+.tenders {
+  @extend .publications;
+  ul.publications-listing {
+    padding: 0px;
+    text-align: left !important;
+    margin: 0px;
+    li {
+      list-style-type: none;
+      position: relative;
+      //			padding: 10px 5px 20px;;
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+      a {
+        color: #000;
+        //				display: inline-block;
+        @extend .text-spacing;
+        padding-left: 20px;
+        padding-top: 20px;
+        &:hover {
+          color: $link-color;
+          @include transition(0.4s);
+        }
+        //                &:before {
+        //                    font-family: 'chief-sec';
+        //                    content: "\68";
+        //                    padding-right: 20px;
+        //                }
+        .icon-document {
+          float: left;
+          font-size: 50px;
+          margin-right: 20px;
+          position: relative;
+          top: 10px;
+        }
+      }
+    }
+  }
+}

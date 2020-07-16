@@ -1,0 +1,125 @@
+
+
+
+    /**
+         * ------------------------------------------------------------
+         * FAQ
+         * ------------------------------------------------------------
+    */
+
+    @mixin arrow-down($size: 10px, $color: #fff){
+  width: 0;
+  height: 0;
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-top: $size solid $color;
+}
+
+@mixin arrow-right($size: 10px, $color: #fff){
+  width: 0;
+  height: 0;
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-left: $size solid $color;
+}
+
+
+
+
+
+.accordion {
+  // width: 302px;
+  margin: 0 auto;
+  // padding-top: 50px;
+}
+
+/* all accordion styles below here */
+
+.accordion {
+
+  dl {
+
+    // width: 302px;
+    @include transition-duration(350ms);
+      border: 1px solid $brand-primary;
+
+    &:hover {
+      // @include box-shadow(0px 0px 10px 3px rgba(0, 0, 0, .25));
+    }
+
+    dt {
+
+      a {
+        background-color: transparent;
+        position: relative;
+        width: 100%;
+        height: 50px;
+        display: block;
+        line-height: 50px;
+        text-align: left;
+        cursor: pointer;
+        font-weight: 300;
+        padding-left: 30px;
+        color: $brand-primary;
+        text-decoration: none;
+          border-bottom: 1px solid $brand-primary;
+
+        .arrow {
+            @include arrow-right(6px);
+            position: absolute;
+            left: 14px;
+            top: 18px;
+
+            .cssanimations & {
+              @include transition-duration(350ms);
+
+              &.down-anim {
+                @include rotate(90deg);
+              }
+            }
+
+            &.down {
+              @include arrow-down(6px);
+              top: 21px;
+              left: 12px;
+            }
+        }
+      }
+
+      &.active, &:hover {
+        a {
+            color: $link-color;
+        }
+      }
+
+      &.active {
+        a {
+          // @include box-shadow(inset 0px -4px 8px 0px rgba(0, 0, 0, .2));
+            border-bottom: 0px solid $brand-primary;
+        }
+      }
+    }
+
+    dd {
+      background-color: #ffffff;
+      // @include background-image(linear-gradient(top, rgb(255, 255, 255), rgb(247, 247, 247)));
+      // @include filter-gradient(rgb(255, 255, 255), rgb(247, 247, 247), vertical);
+      padding: 10px;
+      display: none;
+      // height: 293px;
+
+      &.active {
+        display: block;
+        border-bottom: 1px solid $brand-primary;
+      }
+
+      p {
+        line-height: 1.4;
+      }
+    }
+
+  }
+}
+
+
+

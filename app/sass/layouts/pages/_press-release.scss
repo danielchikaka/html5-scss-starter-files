@@ -1,0 +1,75 @@
+/**
+    * ------------------------------------------------------------
+    * The Press Release
+    * ------------------------------------------------------------
+*/
+
+.press-release {
+    span {
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+ul.publications-listing {
+    padding: 0px;
+    li {
+        list-style-type: none;
+        position: relative;
+        padding-left: 50px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $border-color;
+        a {
+            color: $gray-base;
+            &:hover {
+                color: $link-color;
+            }
+            i {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                font-size: 40px;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+
+ul.projects-listing {
+    @extend ul.publications-listing;
+    li {
+        padding-left: 20px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-color: $gray;
+        a {
+            i {
+                font-size: $font-size-base;
+                top: 2px;
+            }
+        }
+    }
+}
+
+ul.announcements {
+    li {
+        padding-left: 0 !important;
+    }
+}
+
+
+/**
+    * ----------------------------------------------------------------
+    * How do I
+    * ----------------------------------------------------------------
+*/
+
+ul.howdoi {
+    li {
+        padding-left: 0px;
+    }
+}

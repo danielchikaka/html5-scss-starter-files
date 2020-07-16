@@ -1,0 +1,60 @@
+/**
+    * ------------------------------------------------------------
+    * News Page
+    * ------------------------------------------------------------
+*/
+
+.news-listing {
+
+    padding: 0 span(2);
+
+    li {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $border-color; // &:last-child{
+        //     margin-bottom: 0px
+        // }
+        a {
+            img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+        h4 {
+            color: #000;
+        }
+        span {
+            i {
+                position: relative;
+                top: 3px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+    * ------------------------------------------------------------
+    * Single News
+    * ------------------------------------------------------------
+*/
+
+article {
+
+    .featured-img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

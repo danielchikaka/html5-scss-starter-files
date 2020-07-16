@@ -1,0 +1,43 @@
+/**
+     * ----------------------------------------------------------------
+     * Collections
+     * Author: Daniel Chikaka
+     * Email: dani@danielchikaka.com
+     * ----------------------------------------------------------------
+*/
+ul.collections-listing {
+  padding: 0px;
+  li {
+    list-style-type: none;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    // border-bottom: 5px solid $brand-primary;
+    h4 {
+      font-size: 22px;
+      margin-bottom: 0;
+    }
+    .collections-container {
+      border-bottom: 1px solid #ececec;
+      padding: 10px 0 0 0;
+    }
+  }
+}
+
+.view-collections {
+  padding: 20px;
+  border: 1px solid #ececec;
+  background-color: #f2f2f2;
+  input,
+  select {
+    border-radius: 0px;
+    width: 42%;
+  }
+  .form-group {
+    width: 42% !important;
+  }
+  .form-inline .form-control {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+  }
+}

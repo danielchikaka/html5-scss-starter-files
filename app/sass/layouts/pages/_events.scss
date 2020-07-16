@@ -1,0 +1,72 @@
+/**
+     * ----------------------------------------------------------------
+     * Events
+     * Author: Daniel Chikaka
+     * Email: dani@danielchikaka.com
+     * ----------------------------------------------------------------
+*/
+
+.main-content {
+  .sidebar-events {
+    .event-date {
+      @include span(0.5 of 8.5);
+    }
+    .event-content {
+      @include span(7.5 of 8.5 last);
+    }
+    li {
+      &:last-child {
+        border-bottom: 1px solid $border-color;
+      }
+    }
+  }
+}
+
+.events-thumb-page {
+  ul {
+    li {
+      .event-thumb-thumb {
+        img {
+          padding: 3px;
+          border: 1px solid $border-color;
+        }
+        @include borderRadius(2px);
+        @include span(2.1 of 8.5);
+        margin-right: 5px;
+      }
+      .event-thumb-date {
+        @include span(0.7 of 8.5);
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        color: #222;
+        line-height: 24px;
+        margin-right: 5px;
+        border-right: 3px solid $brand-primary;
+        span {
+          font-size: 16px;
+          display: block;
+        }
+      }
+
+      .event-thumb-text {
+        @include span(5.6 of 8.5 last);
+      }
+    }
+  }
+}
+
+/**
+     * ------------------------------------------------------------
+     * Single Event
+     * ------------------------------------------------------------
+*/
+
+.single-event {
+  ul {
+    padding: 0px;
+    li {
+      list-style-type: none;
+    }
+  }
+}

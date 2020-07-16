@@ -1,0 +1,107 @@
+/**
+     * ----------------------------------------------------------------
+     * Calendar Overide SCSS
+     * ----------------------------------------------------------------
+*/
+
+.custom-header {
+  background: #fff;
+  padding: 5px 10px 10px 20px;
+  height: 70px;
+  position: relative;
+  border-top: 5px solid #770018;
+  border-bottom: 1px solid #ddd;
+  h3{
+  	  font-size: 14px;
+  font-weight: 400;
+  color: #444;
+  }
+
+}
+h3#custom-year{
+    margin: 0px;
+
+}
+.custom-header nav span:before {
+
+  color: $brand-primary;
+  &:hover{
+  	color: $brand-primary-hover;
+  }
+}
+
+.custom-header nav span:before {
+  color: $brand-primary;
+    &:hover{
+  	color: $brand-primary-hover;
+  }
+  
+}
+
+.fc-calendar .fc-head {
+ color: $brand-primary;
+}
+.fc-calendar .fc-row > div.fc-today {
+  background: $brand-primary;
+}
+.fc-calendar .fc-row > div.fc-today.fc-content:after {
+  color: yellow;
+}
+.fc-calendar .fc-row > div.fc-content:after {
+  color:  $brand-primary;
+
+  &:hover{
+    color: $brand-primary-hover;	
+  }
+}
+
+.custom-content-reveal h4 {
+  color: $text-color;
+    border-top: 5px solid $brand-primary;
+}
+.custom-content-reveal h5 {
+  color: $text-color;
+    text-align: left;
+    a{
+    	  font-size: 19px;
+    	  padding: 0 10px;
+
+    }
+}
+.custom-content-reveal {
+  border: 1px solid #ececec;
+}
+.fc-calendar-container {
+  height: 290px;
+    padding-top: 0px;
+      background: #F7F9FA;
+}
+
+.custom-calendar-wrap {
+  margin: 0px auto;
+}
+
+.custom-content-reveal a {
+  color:  $link-color;
+
+  &:hover{
+  	color:  $link-hover-color;
+  }
+}
+
+
+custom-content-reveal a, .custom-content-reveal span {
+  font-size: 15px;
+  padding: 5px 10px;
+  display: block;
+  text-align: left;
+}
+.custom-content-reveal span {
+  color: $text-color;
+
+  .place{
+  	  padding-left: 0px;
+  	  font-size: 12px;
+  font-weight: 600;
+  }
+}

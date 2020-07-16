@@ -1,0 +1,51 @@
+<!--START HEADER-->
+<header id="main-header">
+    <div class="container">
+        <div class="header-inner-content">
+            <ul class="topbar-menu">
+                <li>
+                    <a href="#"> SWAHILI</a> 
+                </li>
+                
+                <li class="active">
+                    <a href="#"> ENGLISH</a>
+                </li>
+            </ul>
+            <div class="logo">
+                <a href="."><img src="images/coat.png" alt=""></a>
+            </div>
+            <!--/.logo-->
+            <div class="tagline">
+                <h1> <span>United Republic of Tanzania</span> <br>  {{ siteName }}
+            </h1>
+                <span>Dedicated to providing quality health care</span>
+            </div>
+            <!-- /.tagline -->
+            <div class="sitelogo">
+                <img src="images/logo.png" alt="" width="100px" height="100px">
+            </div>
+            <!-- /.sitelogo -->
+        </div>
+        <!-- /.header-inner-content -->
+    </div>
+    <!-- /.container -->
+</header>
+<!--/END HEADER-->
+<nav id="main-navigation" class="navbar navbar-default">
+    <div class="container">
+        <div class="menu-inner-content">
+            {% include "partials/menu.html" %}
+            <div id="toggle-top-2">
+                <div class="arrow-up"></div>
+                <form action="#" name="form-search" class="f-search-top" method="get">
+                    <input type="text" name="s" class="input-search" placeholder="Search">
+                    <button><i class="icon-search"></i> </button>
+                </form>
+            </div>
+            <!-- /#toggle-top-2 -->
+        </div>
+        <!-- /.menu-inner-content -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!-- /#main-navigation -->

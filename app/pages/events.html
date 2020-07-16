@@ -1,0 +1,109 @@
+{% extends "layout.html" %} {# Start of title #} {% set pageName = "Events " %} {# End of title #} {% block TITLE_META %}
+<title> {{ pageName }} | {{ siteName }} </title>
+<meta name="description" content="some page description here">
+<meta name="keywords" content="page keywords here">
+<link rel="author" name="{{ author }}" />
+<link rel="canonical" href="pageUrl" /> {% endblock %}
+<!--/END title and meta section-->
+<!--START PAGE CSS-->
+{% block CSS %} {% endblock %}
+<!--/END PAGE CSS-->
+{% block content %}
+<!-- MIDDLE CONTENT -->
+<div class="main-content-wrapper">
+    {% include "partials/left-sidebar-menu.html" %} {% include "partials/right-sidebar-menu.html" %}
+    <div class="container">
+        <div class="main-content div-match-height">
+            <!--START INNER CONTENT-->
+            <div class="left-sidebar-main-content  events-thumb-page">
+                <h1 class="title-decoration">{{pageName}}</h1>
+                </h1>
+                <ul class="list-unstyled sidebar-events ">
+                    <li>
+                        <!-- .event-thumb-thumb>img[src="http://dummyimage.com/75x50/888888/fff"]^+.event-thumb-date>19+span{Oct}^+.event-thumb-text>p>lorem20|c -->
+                        <div class="event-thumb-thumb event-date-text"><img src="http://dummyimage.com/180x120/888888/fff" alt=""></div>
+                        <!-- /.event-thumb-thumb -->
+                        <div class="event-thumb-date event-date-text">
+                            19
+                            <span>Oct</span>
+                        </div>
+                        <!-- /.event-thumb-date -->
+                        <div class="event-thumb-text event-date-text">
+                            <p> <a href="single-event.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ratione officia, animi est doloremque, asperiores voluptate</a> </p>
+                        </div>
+                        <!-- /.event-thumb-text -->
+                    </li>
+                    <li>
+                        <!-- .event-thumb-thumb>img[src="http://dummyimage.com/75x50/888888/fff"]^+.event-thumb-date>19+span{Oct}^+.event-thumb-text>p>lorem20|c -->
+                        <div class="event-thumb-thumb event-date-text"><img src="http://dummyimage.com/180x120/888888/fff" alt=""></div>
+                        <!-- /.event-thumb-thumb -->
+                        <div class="event-thumb-date event-date-text">
+                            19
+                            <span>Oct</span>
+                        </div>
+                        <!-- /.event-thumb-date -->
+                        <div class="event-thumb-text event-date-text">
+                            <p> <a href="single-event.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ratione officia, animi est doloremque, asperiores voluptate</a> </p>
+                        </div>
+                        <!-- /.event-thumb-text -->
+                    </li>
+                    <li>
+                        <!-- .event-thumb-thumb>img[src="http://dummyimage.com/75x50/888888/fff"]^+.event-thumb-date>19+span{Oct}^+.event-thumb-text>p>lorem20|c -->
+                        <div class="event-thumb-thumb event-date-text"><img src="http://dummyimage.com/180x120/888888/fff" alt=""></div>
+                        <!-- /.event-thumb-thumb -->
+                        <div class="event-thumb-date event-date-text">
+                            19
+                            <span>Oct</span>
+                        </div>
+                        <!-- /.event-thumb-date -->
+                        <div class="event-thumb-text event-date-text">
+                            <p> <a href="single-event.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ratione officia, animi est doloremque, asperiores voluptate</a> </p>
+                        </div>
+                        <!-- /.event-thumb-text -->
+                    </li>
+                    <li>
+                        <!-- .event-thumb-thumb>img[src="http://dummyimage.com/75x50/888888/fff"]^+.event-thumb-date>19+span{Oct}^+.event-thumb-text>p>lorem20|c -->
+                        <div class="event-thumb-thumb event-date-text"><img src="http://dummyimage.com/180x120/888888/fff" alt=""></div>
+                        <!-- /.event-thumb-thumb -->
+                        <div class="event-thumb-date event-date-text">
+                            19
+                            <span>Oct</span>
+                        </div>
+                        <!-- /.event-thumb-date -->
+                        <div class="event-thumb-text event-date-text">
+                            <p> <a href="single-event.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ratione officia, animi est doloremque, asperiores voluptate</a> </p>
+                        </div>
+                        <!-- /.event-thumb-text -->
+                    </li>
+                </ul>
+                <nav aria-label="Page navigation" class="text-center">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.left-sidebar-main-content -->
+            <!--/END INNER CONTENT-->
+        </div>
+        <!-- /.main-content -->
+        {% include "partials/right-sidebar.html" %}
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.main-content-wrapper -->
+{% endblock %}
+<!--here comes the JS specific for home page-->{% block JS %} {% endblock %}

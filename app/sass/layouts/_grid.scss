@@ -1,0 +1,16 @@
+/**
+* ------------------------------------------------------------
+*  Grid File
+* ------------------------------------------------------------
+*/
+
+.clearfixa {
+    @include clearfixa;
+}
+
+$susy: ( columns: 12, column-width: 78px, gutters:20px/78px, // gutter-position: inside-static,
+math: static, flow: ltr, global-box-sizing: border-box, //debug: (image: show)
+);
+.gallery {
+    @include clearfix;
+}

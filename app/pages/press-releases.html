@@ -1,0 +1,106 @@
+{% extends "layout.html" %} {# Start of title #} {% set pageName = "Press Releases " %} {# End of title #} {% block TITLE_META %}
+<title> {{ pageName }} | {{ siteName }} </title>
+<meta name="description" content="some page description here">
+<meta name="keywords" content="page keywords here">
+<link rel="author" name="{{ author }}" />
+<link rel="canonical" href="pageUrl" /> {% endblock %}
+<!--/END title and meta section-->
+<!--START PAGE CSS-->
+{% block CSS %} {% endblock %}
+<!--/END PAGE CSS-->
+{% block content %}
+<!-- MIDDLE CONTENT -->
+<div class="main-content-wrapper">
+    <!--START LEFT SIDEBAR MENU-->
+    <div class="static-left-sidebar-menu-wrapper">
+        <ul class="list-unstyled">
+            <li class="sidebar-menu-1"><a href="single-page.html"><i class="icon-mouse"></i>Online  <span>Services</span></a></li>
+            <li class="sidebar-menu-2"><a href="events.html"><i class="icon-bell-1"></i>Events</a></li>
+            <li class="sidebar-menu-3"><a href="faq.html"><i class="icon-help"></i>FAQ</a></li>
+        </ul>
+    </div>
+    <!-- /.static-left-sidebar-menu-wrapper -->
+    <!--/END LEFT SIDEBAR MENU-->
+    <div class="container">
+        <div class="main-content div-match-height">
+            <!--START INNER CONTENT-->
+            <div class="left-sidebar-main-content">
+                <h1 class="title-decoration">{{pageName}}</h1>
+                </h1>
+                <ul class="list-unstyled sidebar-docs">
+                    <li>
+                        <div class="event-date">
+                            <img src="images/icons/pdf.png" alt="">
+                        </div>
+                        <!-- /.event-date -->
+                        <div class="event-content">
+                            <h4> <a href="single-events.html">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                            <em> <small><strong>(1.9 kb)</strong></small> </em>
+                        </div>
+                        <!-- /.event-content -->
+                    </li>
+                    <li>
+                        <div class="event-date">
+                            <img src="images/icons/word.png" alt="">
+                        </div>
+                        <!-- /.event-date -->
+                        <div class="event-content">
+                            <h4> <a href="single-events.html">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                            <em> <small><strong>(910 kb)</strong></small> </em>
+                        </div>
+                        <!-- /.event-content -->
+                    </li>
+                    <li>
+                        <div class="event-date">
+                            <img src="images/icons/ppt.png" alt="">
+                        </div>
+                        <!-- /.event-date -->
+                        <div class="event-content">
+                            <h4> <a href="single-events.html">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                            <em> <small><strong>(2 Mb)</strong></small> </em>
+                        </div>
+                        <!-- /.event-content -->
+                    </li>
+                    <li>
+                        <div class="event-date">
+                            <img src="images/icons/excel.png" alt="">
+                        </div>
+                        <!-- /.event-date -->
+                        <div class="event-content">
+                            <h4> <a href="single-events.html">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                            <em> <small><strong>(3 kb)</strong></small> </em>
+                        </div>
+                        <!-- /.event-content -->
+                    </li>
+                </ul>
+                <nav aria-label="Page navigation" class="text-center">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.left-sidebar-main-content -->
+            <!--/END INNER CONTENT-->
+        </div>
+        <!-- /.main-content -->
+        {% include "partials/right-sidebar.html" %}
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.main-content-wrapper -->
+{% endblock %}
+<!--here comes the JS specific for home page-->{% block JS %} {% endblock %}

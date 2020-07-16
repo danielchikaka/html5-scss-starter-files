@@ -1,0 +1,31 @@
+/**
+     * ------------------------------------------------------------
+     * Testmonies
+     * ------------------------------------------------------------
+*/
+
+ul.testmonies-page {
+    display: inline-block;
+    li {
+        @include gallery(8 of 9);
+        margin-bottom: 20px;
+        border-bottom: 1px solid $gray;
+        padding-bottom: 20px;
+        .image-box {
+            @include span(1 of 9);
+            img {
+                @include borderRadius(100px);
+            }
+        }
+        .text-box {
+            @include span(7 of 9 last);
+            h4 {
+                font-weight: 300;
+                font-size: $font-size-base;
+            }
+            span {
+                font-style: italic;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+/*
+     * ------------------------------------------------------------
+     * Commands
+     * ------------------------------------------------------------
+ */
+
+.commands-page-wrapper {
+    background-color: #fff;
+    display: inline-block;
+    margin: 10px 0;
+    // border: 1px solid #eee;
+}
+
+.commands-sidebar-wrapper {
+    @include span(2 of 12);
+    text-align: center;
+    background-color: #eee;
+    ul {
+        padding: 0px;
+        li {
+            list-style-type: none;
+            // display: initial;
+            border-bottom: 1px solid #ccc;
+            padding: 20px 0;
+            &:last-child {
+                // border-bottom: 0;
+            }
+            img {
+                margin-bottom: 10px;
+            }
+            p {
+                margin: 0px;
+            }
+            .arrow-right {
+                display: none;
+            }
+        }
+        li.active {
+            background-color: darken(#eee, 20%);
+            position: relative;
+            a {
+                color: #fff;
+            }
+            .arrow-right {
+                border-left: 20px solid darken(#eee, 20%);
+                position: absolute;
+                right: -15px;
+                top: 35%;
+                display: block;
+            }
+        }
+    }
+}
+
+.commands-content {
+    @include span(10 of 12 last);
+    padding: 20px;
+}

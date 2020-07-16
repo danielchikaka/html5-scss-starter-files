@@ -1,0 +1,54 @@
+{% extends "layout.html" %} {# Start of title #} {% set pageName = "Contact Us" %} {# End of title #} {% block TITLE_META %}
+<title> {{ pageName }} | {{ siteName }} </title>
+<meta name="description" content="some page description here">
+<meta name="keywords" content="page keywords here">
+<link rel="author" name="{{ author }}" />
+<link rel="canonical" href="pageUrl" /> {% endblock %}
+<!--/END title and meta section-->
+<!--START PAGE CSS-->
+{% block CSS %} {% endblock %}
+<!--/END PAGE CSS-->
+{% block content %}
+<!-- MIDDLE CONTENT -->
+<div class="main-content-wrapper">  
+    <!--START LEFT SIDEBAR MENU-->
+    <div class="static-left-sidebar-menu-wrapper">
+        <ul class="list-unstyled">
+            <li class="sidebar-menu-1"><a href="single-page.html"><i class="icon-mouse"></i>Online  <span>Services</span></a></li>
+            <li class="sidebar-menu-2"><a href="events.html"><i class="icon-bell-1"></i>Events</a></li>
+            <li class="sidebar-menu-3"><a href="faq.html"><i class="icon-help"></i>FAQ</a></li>
+        </ul>
+    </div>
+    <!-- /.static-left-sidebar-menu-wrapper -->
+    <!--/END LEFT SIDEBAR MENU-->
+    <div class="container">
+        <div class="main-content div-match-height">
+            <h1 class="title-decoration">{{ pageName }}</h1>
+            <div class="contact">
+                <form action="#">
+                    <p>
+                        <input type="text" name="names" placeholder="Enter Your Name" autofocus> </p>
+                    <p>
+                        <input type="email" name="email" placeholder="Enter Your Email"> </p>
+                    <p>
+                        <input type="text" name="subject" placeholder="Enter the Subject"> </p>
+                    <p>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </p>
+                    <p>
+                        <div class="g-recaptcha" data-sitekey="6Lc1IhgUAAAAAEGvnuhLOQshpKn_lqQjHYTaeL2e"></div>
+                    </p>
+                    <p>
+                        <button type="submit" class="btn btn-primary btn-link-button">SEND MESSAGE</button>
+                    </p>
+            </div>
+            <!-- /.contact form -->
+        </div>
+        <!-- /.main-content -->
+        {% include "partials/right-sidebar.html" %}
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.main-content-wrapper -->
+{% endblock %}
+<!--here comes the JS specific for home page-->{% block JS %} {% endblock %}

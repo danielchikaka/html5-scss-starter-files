@@ -1,0 +1,14 @@
+/**
+     * ----------------------------------------------------------------
+     * Single Page Styling
+     * Author: Daniel Chikaka
+     * Email: dani@danielchikaka.com
+     * ----------------------------------------------------------------
+*/
+
+.main-content {
+  @include span(8.5 of 12); // border: 1px solid #ececec;
+  border-left: 0px;
+  padding: 0; // color: #000;
+  padding: 30px 0;
+}

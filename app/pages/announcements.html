@@ -1,0 +1,59 @@
+{% extends "layout.html" %} {# Start of title #} {% set pageName = "Announcements" %} {# End of title #} {% block TITLE_META %}
+<title> {{ pageName }} | {{ siteName }} </title>
+<meta name="description" content="some page description here">
+<meta name="keywords" content="page keywords here">
+<link rel="author" name="{{ author }}" />
+<link rel="canonical" href="pageUrl" /> {% endblock %}
+<!--/END title and meta section-->
+<!--START PAGE CSS-->
+{% block CSS %} {% endblock %}
+<!--/END PAGE CSS-->
+{% block content %}
+<!-- MIDDLE CONTENT -->
+<div class="main-content-wrapper">
+    {% include "partials/left-sidebar-menu.html" %} {% include "partials/right-sidebar-menu.html" %}
+    <div class="container">
+        <div class="main-content div-match-height">
+            <h1 class="title-decoration">{{ pageName }}</h1>
+            <ul class="list-unstyled announcements-listing">
+                <li>
+                    <h4><a href="single-page.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, et.</a></h4>
+                    <span class="date">September 01, 2017</span>
+                </li>
+                <li>
+                    <h4><a href="single-page.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, et.</a></h4>
+                    <span class="date">September 01, 2017</span>
+                </li>
+                <li>
+                    <h4><a href="single-page.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, et.</a></h4>
+                    <span class="date">September 01, 2017</span>
+                </li>
+            </ul>
+            <nav aria-label="Page navigation" class="text-center">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /.main-content -->
+        {% include "partials/right-sidebar.html" %}
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.main-content-wrapper -->
+{% endblock %}
+<!--here comes the JS specific for home page-->{% block JS %} {% endblock %}

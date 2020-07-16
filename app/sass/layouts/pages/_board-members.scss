@@ -1,0 +1,43 @@
+/**
+     * ----------------------------------------------------------------
+     * Board Members
+     * Author: Daniel Chikaka
+     * Email: dani@danielchikaka.com
+     * ----------------------------------------------------------------
+*/
+
+ul.board-listing {
+  padding: 0;
+  li {
+    list-style-type: none;
+    border: 1px solid $gray;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    // @include gallery(2.9 of 8);
+    display: inline-block;
+    width: 100%;
+    a {
+      img {
+        width: 252px;
+        height: 270px;
+        margin-left: opx;
+        margin-right: 20px;
+        // margin-top: -1px;
+        float: left;
+      }
+    }
+    h4 {
+      padding: 0 10px;
+    }
+    p {
+      padding: 0 10px;
+      @extend .text-spacing;
+    }
+    a.view-more {
+      padding: 0 10px 20px 0px;
+    }
+    &:hover {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+}

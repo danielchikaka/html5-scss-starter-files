@@ -1,0 +1,36 @@
+/**
+     * ----------------------------------------------------------------
+     * Speeches
+     * Author: Daniel Chikaka
+     * Email: dani@danielchikaka.com
+     * ----------------------------------------------------------------
+*/
+
+.speeches-page {
+  @extend .notice-board;
+
+  ul.notice-board-listing {
+    @extend ul.publications-listing;
+
+    li {
+      position: relative;
+      padding-left: 0px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      .icon-bell-o {
+        position: absolute;
+        left: 0px;
+        font-size: 26px;
+      }
+      a {
+        display: block;
+        margin-bottom: 10px;
+        padding-left: 0px;
+        padding-top: 0px;
+      }
+      span {
+        margin-left: 0px;
+      }
+    }
+  }
+}

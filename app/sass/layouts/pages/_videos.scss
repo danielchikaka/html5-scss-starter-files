@@ -1,0 +1,105 @@
+/**
+    * ------------------------------------------------------------
+    * Videos Page
+    * ------------------------------------------------------------
+*/
+
+ul.videos-listing {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style-type: none;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $border-white-color;
+        a {
+            float: left;
+            // margin-right: 20px;
+            position: relative;
+            display: block;
+            &:active,
+            &:visited,
+            &:focus {
+                outline: 0;
+                border: none;
+                text-decoration: none !important;
+            }
+            img {
+                width: 240px;
+                height: 180px;
+                float: none;
+                margin-right: 20px;
+            }
+            img.lazy {
+                width: 240px;
+                height: 180px;
+            }
+            i.icon {
+                position: absolute;
+                color: #fff;
+                top: 35%;
+                left: 35%;
+                font-size: 50px;
+            }
+            span {
+                position: absolute;
+                bottom: 0;
+                right: 30px;
+                color: #fff;
+                font-size: 19px;
+                i {
+                    font-size: 18px;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+            &:hover {
+                i.icon {
+                    color: $link-color;
+                }
+            }
+        }
+        h4 {
+            margin-bottom: 6px;
+            line-height: 20px;
+            font-size: 16px !important;
+            display: initial;
+        }
+        p {
+            display: initial;
+        }
+        span {
+            display: block;
+        }
+        .album-info {
+            p {
+                display: block;
+            }
+        }
+    }
+}
+
+.date-time {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+
+/**
+    * ------------------------------------------------------------
+    * Video Plugin Cuustomization
+    * ------------------------------------------------------------
+*/
+
+.mfp-title {
+    position: absolute;
+    color: #FFF;
+    background: #000;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    //  padding: 10px 15px;
+}

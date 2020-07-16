@@ -1,0 +1,130 @@
+/**
+     * ------------------------------------------------------------
+     * Contact SCSS
+     * ------------------------------------------------------------
+*/
+
+#google-map {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    // @include span(8.5);
+    padding: 0 span(1);
+    form {
+        display: block; // background-color: #f7f7f7;
+        //  z-index: 10;
+        position: relative; // z-index: 999;
+        // line-height: 2em;
+        // right:0px;
+        // width: 100%;
+        // top: 38px;
+        // padding: 15px;
+        // height: 38px;
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea,
+        input[type="number"] {
+            // position: absolute;
+            // height: 38px;
+            // top: 38px;
+            // right: 0;
+            // width: 49%;
+            background-color: #fff; // color: #ecf0f5;
+            border: 2px solid #eee;
+            background-color: #f4f4f4;
+            padding: 8px; // padding-right: 50px;
+            outline: none;
+            @include transition(0.3s);
+            @include borderRadius(3px);
+            &:focus {
+                border: 2px solid #ddd;
+                background-color: #fff;
+                color: #333;
+            }
+        }
+        input#answ {
+            width: 49%;
+        }
+        input,
+        select,
+        textarea,
+        input[type="number"] {
+            background-color: #f4f4f4;
+            width: 100%;
+            &:focus {
+                border: 2px solid #ddd;
+                background-color: #fff;
+                color: #333;
+            }
+        }
+        input[type="checkbox"] {
+            margin-top: 15px;
+        }
+        &:before {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid black;
+        }
+        .input-group-btn {
+            position: absolute;
+            right: 38px;
+            bottom: 2px;
+        }
+        .btn {
+            // @include borderLeft(0px);
+        }
+    }
+}
+
+.contact-form {
+    @include span(7.07);
+}
+
+.normal-contact-wrap {
+    @include span(4 of 12 last);
+}
+
+.normal-contact {
+    h2 {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+.g-recaptcha {
+    width: 100%;
+}
+
+
+
+
+
+/**
+* ------------------------------------------------------------
+* ZOnal Offices
+* ------------------------------------------------------------
+*/
+
+.zonal-offices {
+    @include span(3.4 of 9 last);
+    ul {
+        padding: 0px;
+        li {
+            border-bottom: 2px solid $border-color;
+            list-style: none;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+    }
+}

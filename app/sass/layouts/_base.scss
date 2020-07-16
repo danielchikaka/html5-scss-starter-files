@@ -1,0 +1,74 @@
+/**
+     * ----------------------------------------------------------------
+     *  Base SASS
+     * ----------------------------------------------------------------
+*/
+
+html {
+    width: 100%;
+    display: table;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.lazy {
+    display: none;
+}
+
+body {
+    // background-color: $body-bg;
+    // line-height: 1.5em;
+    // background-image: url('../images/body-bg.png');
+    // background-repeat: no-repeat;
+    // background-position-y: 160px;
+    // background-color: #FFFEF1;
+}
+
+a {
+    &:hover {
+        @include transition(0.25s);
+        text-decoration: none;
+        outline: 0; // color: $link-color;
+    }
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+.nopadding-left {
+    padding-left: 0px !important;
+}
+
+.nopadding-right {
+    padding-right: 0px !important;
+}
+
+.no-margin-right {
+    margin-right: 0 !important;
+}
+
+.nopadding {
+    @extend .nopadding-left;
+    @extend .nopadding-right;
+}
+
+.noborder {
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+}

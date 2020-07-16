@@ -1,0 +1,150 @@
+{% extends "layout.html" %} {# Start of title #} {% set pageName = "Gallery" %} {# End of title #} {% block TITLE_META %}
+<title> {{ pageName }} | {{ siteName }} </title>
+<meta name="description" content="some page description here">
+<meta name="keywords" content="page keywords here">
+<link rel="author" name="{{ author }}" />
+<link rel="canonical" href="pageUrl" /> {% endblock %}
+<!--/END title and meta section-->
+<!--START PAGE CSS-->
+{% block CSS %}
+<!-- build:css css/magnific-popup.min.css -->
+<link href="bower_components/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+<!-- endbuild -->
+{% endblock %}
+<!--/END PAGE CSS-->
+{% block content %}
+<!-- MIDDLE CONTENT -->
+<div class="main-content-wrapper">
+    {% include "partials/left-sidebar-menu.html" %} {% include "partials/right-sidebar-menu.html" %}
+    <div class="container">
+        <div class="main-content div-match-height">
+            <h1 class="title-decoration">{{ pageName }}</h1>
+            <ul class="videos-listing">
+                <li class="galleria">
+                    <a href="https://dummyimage.com/1200x540/888888/fff" class="gallery-item" title="Winter Dance">
+                            <img src="https://dummyimage.com/270x203/888888/fff" alt="">
+                            <span><i class="icon-camera"></i> 20</span>
+                        </a>
+                    <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" class="gallery-item hidden" title="Winter Dance"></a>
+                    <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" class="gallery-item hidden" title="The Uninvited Guest"></a>
+                    <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" class="gallery-item hidden" title="Oh no, not again!"></a>
+                    <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" class="gallery-item hidden" title="Swan Lake"></a>
+                    <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" class="gallery-item hidden" title="The Shake"></a>
+                    <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" class="gallery-item hidden" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eligendi itaque quod delectus molestias nihil modi quibusdam blanditiis, velit voluptatem!"></a>
+                    <div class="album-info">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum a saepe asperiores.</h4>
+                        <p>Posted on: January 23, 2016</p>
+                    </div>
+                    <!-- /.album-info -->
+                </li>
+                <li class="galleria">
+                    <a href="https://dummyimage.com/1200x540/888888/fff" class="gallery-item" title="Winter Dance">
+                            <img src="https://dummyimage.com/270x203/888888/fff" alt="">
+                            <span><i class="icon-camera"></i> 20</span>
+                        </a>
+                    <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" class="gallery-item hidden" title="Winter Dance"></a>
+                    <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" class="gallery-item hidden" title="The Uninvited Guest"></a>
+                    <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" class="gallery-item hidden" title="Oh no, not again!"></a>
+                    <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" class="gallery-item hidden" title="Swan Lake"></a>
+                    <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" class="gallery-item hidden" title="The Shake"></a>
+                    <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" class="gallery-item hidden" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eligendi itaque quod delectus molestias nihil modi quibusdam blanditiis, velit voluptatem!"></a>
+                    <div class="album-info">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum a saepe asperiores.</h4>
+                        <p>Posted on: January 23, 2016</p>
+                    </div>
+                    <!-- /.album-info -->
+                </li>
+                <li class="galleria">
+                    <a href="https://dummyimage.com/1200x540/888888/fff" class="gallery-item" title="Winter Dance">
+                            <img src="https://dummyimage.com/270x203/888888/fff" alt="">
+                            <span><i class="icon-camera"></i> 20</span>
+                        </a>
+                    <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" class="gallery-item hidden" title="Winter Dance"></a>
+                    <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" class="gallery-item hidden" title="The Uninvited Guest"></a>
+                    <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" class="gallery-item hidden" title="Oh no, not again!"></a>
+                    <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" class="gallery-item hidden" title="Swan Lake"></a>
+                    <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" class="gallery-item hidden" title="The Shake"></a>
+                    <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" class="gallery-item hidden" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eligendi itaque quod delectus molestias nihil modi quibusdam blanditiis, velit voluptatem!"></a>
+                    <div class="album-info">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum a saepe asperiores.</h4>
+                        <p>Posted on: January 23, 2016</p>
+                    </div>
+                    <!-- /.album-info -->
+                </li>
+                <li class="galleria">
+                    <a href="https://dummyimage.com/1200x540/888888/fff" class="gallery-item" title="Winter Dance">
+                            <img src="https://dummyimage.com/270x203/888888/fff" alt="">
+                            <span><i class="icon-camera"></i> 20</span>
+                        </a>
+                    <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" class="gallery-item hidden" title="Winter Dance"></a>
+                    <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" class="gallery-item hidden" title="The Uninvited Guest"></a>
+                    <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" class="gallery-item hidden" title="Oh no, not again!"></a>
+                    <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" class="gallery-item hidden" title="Swan Lake"></a>
+                    <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" class="gallery-item hidden" title="The Shake"></a>
+                    <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" class="gallery-item hidden" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eligendi itaque quod delectus molestias nihil modi quibusdam blanditiis, velit voluptatem!"></a>
+                    <div class="album-info">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum a saepe asperiores.</h4>
+                        <p>Posted on: January 23, 2016</p>
+                    </div>
+                    <!-- /.album-info -->
+                </li>
+                <li class="galleria">
+                    <a href="https://dummyimage.com/1200x540/888888/fff" class="gallery-item" title="Winter Dance">
+                            <img src="https://dummyimage.com/270x203/888888/fff" alt="">
+                            <span><i class="icon-camera"></i> 20</span>
+                        </a>
+                    <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" class="gallery-item hidden" title="Winter Dance"></a>
+                    <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" class="gallery-item hidden" title="The Uninvited Guest"></a>
+                    <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" class="gallery-item hidden" title="Oh no, not again!"></a>
+                    <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" class="gallery-item hidden" title="Swan Lake"></a>
+                    <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" class="gallery-item hidden" title="The Shake"></a>
+                    <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" class="gallery-item hidden" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eligendi itaque quod delectus molestias nihil modi quibusdam blanditiis, velit voluptatem!"></a>
+                    <div class="album-info">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum a saepe asperiores.</h4>
+                        <p>Posted on: January 23, 2016</p>
+                    </div>
+                    <!-- /.album-info -->
+                </li>
+            </ul>
+            <nav class="text-center">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /.main-content -->
+        {% include "partials/right-sidebar.html" %}
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.main-content-wrapper -->
+{% endblock %}
+<!--here comes the JS specific for home page-->{% block JS %}
+<!--build:js js/jquery.magnific-popup.min.js -->
+<script src="bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<!-- endbuild -->
+<script>
+$(document).ready(function() {
+    $('li.galleria').each(function() {
+        $(this).magnificPopup({
+            type: 'image',
+            delegate: 'a',
+            gallery: {
+
+                enabled: true
+            }
+        });
+    })
+});
+</script>
+{% endblock %}

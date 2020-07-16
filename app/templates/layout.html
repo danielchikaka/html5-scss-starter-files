@@ -1,0 +1,83 @@
+{# Start of siteName #} {% set siteName = "National Health Insurance Fund " %}
+{# End of siteName #} {# Start of author #} {% set author =
+"http://danielchikaka.com" %} {# End of author #}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {# Start of meta part #} {% block TITLE_META %} {% endblock %} {# End of
+    meta part #}
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Source+Sans+Pro:400,600"
+      rel="stylesheet"
+    />
+    <!--START PAGE CSS-->
+    {% block CSS %} {% endblock %}
+    <!--/END PAGE CSS-->
+    <!-- build:css css/jquery.smartmenus.bootstrap.min.css -->
+    <link
+      href="node_modules/smartmenus/src/addons/bootstrap/jquery.smartmenus.bootstrap.css"
+      rel="stylesheet"
+    />
+    <!-- endbuild -->
+    <!-- build:css css/master.min.css -->
+    <link href="css/master.css" rel="stylesheet" />
+    <!-- endbuild -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <!--<div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>-->
+    {# Start of header #} {% include "partials/header.html" %} {# End of header
+    #} {# Start of main content #} {% block content %} {% endblock %} {# End of
+    main content #} {# Start of footer #} {% include "partials/footer.html" %}
+    {# End of footer #}
+    <!--CORE JS-->
+    <!--build:js js/jquery.min.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- endbuild -->
+    <!--build:js js/bootstrap.min.js -->
+    <script src="node_modules/bootstrap/assets/javascripts/bootstrap.min.js"></script>
+    <!-- endbuild -->
+    <!--build:js js/jquery.placeholder.min.js -->
+    <script
+      src="node_modules/jquery-placeholder/jquery.placeholder.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- endbuild -->
+    <!--build:js js/jquery.easing.min.js -->
+    <script
+      src="node_modules/jquery.easing/js/jquery.easing.js"
+      type="text/javascript"
+    ></script>
+    <!-- endbuild -->
+    <!--build:js js/jquery.smartmenus.min.js -->
+    <script src="node_modules/smartmenus/src/jquery.smartmenus.js"></script>
+    <!-- endbuild -->
+    <!--build:js js/jquery.smartmenus.bootstrap.min.js -->
+    <script src="node_modules/smartmenus/src/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
+    <!-- endbuild -->
+    <!--build:js js/jquery.lazyload.min.js -->
+    <script src="node_modules/jquery_lazyload/jquery.lazyload.js"></script>
+    <!-- endbuild -->
+    <!--END CORE JS-->
+    <!--PAGES JS-->
+    {% block JS %} {% endblock %}
+    <!--END PAGES JS-->
+    <!--CUSTOM JS-->
+    <!--our custom js from layout file-->
+    <!--build:js js/custom.min.js -->
+    <script src="js/custom.js" type="text/javascript"></script>
+    <!-- endbuild -->
+    <!--END OF CUSTOM JS-->
+  </body>
+</html>

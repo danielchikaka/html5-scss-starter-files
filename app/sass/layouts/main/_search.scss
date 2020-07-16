@@ -1,0 +1,26 @@
+/**
+     * ----------------------------------------------------------------
+     * Search Results Page SCSS
+     * ----------------------------------------------------------------
+*/
+
+
+
+.search{
+
+  ul{
+    padding: 0px;
+    li{
+      list-style-type: none;
+          padding: 5px 0;
+    margin: 5px 0;
+
+      a{
+        font-family: $headings-font-family;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+      
+    }
+  }
+}

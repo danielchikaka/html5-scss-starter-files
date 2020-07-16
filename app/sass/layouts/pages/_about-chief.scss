@@ -1,0 +1,35 @@
+/**
+    * ------------------------------------------------------------
+    * The About Chief Page
+    * ------------------------------------------------------------
+*/
+h2.h3{
+        font-size: 18px;
+    color: #000;
+        margin-bottom: 2px;
+}
+ol{
+    li{
+            margin-bottom: 6px;
+
+    }
+}
+.bio-page-thumb{
+    text-align: center;
+   @include span(3.5 of 12);
+    img{
+        margin-bottom: 5px;
+        margin-top: 20px;
+            width: 185px;
+    height: 235px;
+    }
+    p{
+     text-align: center !important;
+        margin: 0px;
+    }
+}
+
+.bio-page-content{
+    @include span(8 of 12 last);
+
+}

@@ -1,0 +1,263 @@
+        /**
+     * ----------------------------------------------------------------
+     * Slider SCSS
+     * ----------------------------------------------------------------
+*/
+
+        .hello-wrapper {
+            border-top: 0px solid $border-color;
+            padding: 15px 0;
+            position: relative;
+        }
+        /**
+     * ------------------------------------------------------------
+     * Static Menu
+     * ------------------------------------------------------------
+*/
+
+        .static-left-sidebar-menu-wrapper {
+            position: fixed; // left: 0px;
+            top: 195px;
+            ul {
+                padding: 0;
+                li {
+                    a {
+                        // text-align: center;
+                        display: block;
+                        line-height: 15px;
+                        padding: 6px 12px 6px 25px;
+                        text-align: right;
+                        width: 100px;
+                        -webkit-border-top-right-radius: 4px;
+                        -webkit-border-bottom-right-radius: 4px;
+                        -moz-border-radius-topright: 4px;
+                        -moz-border-radius-bottomright: 4px;
+                        border-top-right-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                        transition: left .4s ease-in-out;
+                        -o-transition: left .4s ease-in-out;
+                        -ms-transition: leftt .4s ease-in-out;
+                        -moz-transition: left .4s ease-in-out;
+                        -webkit-transition: left .4s ease-in-out;
+                        border: 0;
+                        border-left: 0;
+                        font-size: 12px;
+                        font-weight: 400;
+                        cursor: pointer;
+                        background: $brand-primary;
+                        color: #fff;
+                        position: fixed;
+                        z-index: 14;
+                        left: -20px;
+                        i {
+                            display: block;
+                            font-size: em(24px);
+                            line-height: .75em;
+                            vertical-align: -15%;
+                        }
+                        span {
+                            display: block;
+                        }
+                        &:hover {
+                            left: 0;
+                            color: rgba(255, 255, 255, 0.8);
+                        }
+                    }
+                }
+                li.sidebar-menu-1 {
+                    // top: 100px;
+                }
+                li.sidebar-menu-2 {
+                    top: 67px;
+                    position: relative;
+                }
+                li.sidebar-menu-3 {
+                    top: 135px;
+                    position: relative;
+                }
+            }
+        }
+        /**
+     * ------------------------------------------------------------
+     * Social Media
+     * ------------------------------------------------------------
+*/
+
+        .static-right-sidebar-menu-wrapper {
+            position: fixed;
+            top: 185px;
+            right: -1px;
+        }
+
+        ul.social-media-listing {
+            li {
+                // display: inline-block;
+                margin-top: 20px;
+                a {
+                    i {
+                        // width: 140px;
+                        // display: initial;
+                        padding: 10px 10px 6px;
+                        @include borderRadius(3px);
+                        @include borderRight(0px); // transition: display .4s ease-in-out;
+                        // -o-transition: display .4s ease-in-out;
+                        // -ms-transition: display .4s ease-in-out;
+                        // -moz-transition: display .4s ease-in-out;
+                        // -webkit-transition: display .4s ease-in-out;
+                        // &:hover {
+                        //     display: block;
+                        // }
+                    }
+                    .icon-facebook,
+                    .icon-social {
+                        background-color: $facebook;
+                        color: #fff;
+                        opacity: 0.75;
+                        @include transition(opacity);
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                    .icon-twitter {
+                        @extend .icon-social;
+                        background-color: $twitter;
+                    }
+                    .icon-youtube {
+                        @extend .icon-social;
+                        background-color: $youtube;
+                    }
+                    .icon-linkedin {
+                        @extend .icon-social;
+                        background-color: $linkedin;
+                    }
+                    .icon-instagram {
+                        @extend .icon-social;
+                        background-color: $instagram;
+                    }
+                    .icon-google-plus {
+                        @extend .icon-social;
+                        background-color: $googleplus;
+                    }
+                }
+            }
+        }
+        /**
+* ------------------------------------------------------------
+* Main Slider Styling
+* ------------------------------------------------------------
+*/
+
+        .slider-wrapper {
+            background-color: #fff;
+            @include span(9 of 12);
+            padding: em(18px);
+            margin-bottom: em(40px);
+            img {
+                width: 100%;
+                height: em(435px);
+            }
+        }
+
+        .carousel-control {
+            width: 4%;
+        }
+
+        .carousel-indicators {
+            bottom: -35px;
+            li {
+                border-color: $addon-color;
+            }
+        }
+
+        .carousel-indicators .active {
+            background-color: $brand-primary;
+            li {
+                border: 0px;
+            }
+        }
+
+        .icon-arrow-carrot-left-alt {
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            z-index: 5;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-top: -10px;
+            font-size: 30px;
+            margin-left: 0px;
+        }
+
+        .icon-arrow-carrot-right-alt {
+            // margin-right: 0px;
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            z-index: 5;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-top: -10px;
+            font-size: 30px;
+            right: 20px;
+        }
+
+        .carousel-control.right {
+            left: auto;
+            right: 0px;
+            background-image: none;
+            filter: none;
+        }
+
+        .carousel-control.left {
+            right: auto;
+            left: 0px;
+            background-image: none;
+            filter: none;
+        }
+
+        .carousel-caption {
+            // left: 7%;
+            // right: 20%;
+            // padding-bottom: 30px;
+            // bottom: auto;
+            // //top: 20px;
+            // width: 40%;
+            text-shadow: none;
+            text-align: left; //New Changes
+            left: 0;
+            padding: 5px 30px;
+            width: 100%;
+            bottom: 0;
+            right: 0; // background: rgba(30,87,153,0.6);
+            background: rgba(0, 0, 0, 0.45);
+            h1 {
+                // font-size: 4.2rem;
+                line-height: 1.2;
+                font-weight: 900; // color: #000;
+                // margin-bottom: 30px;
+                //New Changes
+                color: #1D3D6A;
+                color: #f9f9f9;
+                font-size: 2rem;
+                margin-bottom: 5px;
+                margin-top: 10px !important;
+            }
+            p {
+                color: #333; // opacity: 0.75;
+                line-height: 1.25;
+                font-size: em(16px);
+                color: #f7f7f7;
+                text-shadow: 1px 1px 1px #555;
+                padding-top: 10px;
+            }
+            a {
+                display: none;
+            }
+        }
+        /**
+* ------------------------------------------------------------
+* Profile Pic Styling
+* ------------------------------------------------------------
+*/

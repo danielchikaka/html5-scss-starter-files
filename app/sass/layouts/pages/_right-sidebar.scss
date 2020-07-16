@@ -1,0 +1,241 @@
+/**
+     * ------------------------------------------------------------
+     * Right Sidebar
+     * ------------------------------------------------------------
+*/
+
+.right-sidebar-wrapper {
+    @include span(3.5 of 12 last);
+    padding: 30px 0; // border-left: 2px solid $border-color;
+    background-color: #f7f7f7;
+}
+
+.right-sidebar-container {
+    h2 {
+        margin: 0px;
+        background-color: $brand-primary;
+        color: #fff;
+        padding: 8px 15px;
+    }
+}
+
+.sidebar-news {
+    padding: 15px;
+    li {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 8px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $border-color;
+        &:last-child {
+            margin-bottom: 0px;
+            border-bottom: 0px;
+        }
+        a {
+            img {
+                float: left;
+                margin-right: 5px;
+                img {
+                    @include borderRadius(3px);
+                }
+            }
+            h4 {
+                margin: 0px;
+                font-size: $font-size-base;
+                font-family: $font-family-base;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+     * ------------------------------------------------------------
+     * Sidebar Events
+     * ------------------------------------------------------------
+*/
+
+.sidebar-events {
+    @extend .sidebar-news;
+    .event-date {
+        text-align: center;
+        font-family: Georgia;
+        font-size: 20px;
+        @include span(0.6 of 3.5 inner-fluid no-gutters);
+        span {
+            display: block;
+            font-family: $font-family-base;
+            font-size: $font-size-base;
+        }
+    }
+
+    .event-content {
+        @include span(2.68 of 3.5 last inner-fluid no-gutters);
+        h4 {
+            font-size: $font-size-base; // margin: 0px;
+            font-family: $font-family-base;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+     * ------------------------------------------------------------
+     * Sidebar Docs
+     * ------------------------------------------------------------
+*/
+
+.sidebar-docs {
+    @extend .sidebar-events;
+    h4 {
+        margin: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+     * ------------------------------------------------------------
+     * Facilities Page
+     * ------------------------------------------------------------
+*/
+
+.facilities-table-wrapper {
+    .table>thead>tr>th,
+    .table>thead>tr>td,
+    .table>tbody>tr>th,
+    .table>tbody>tr>td,
+    .table>tfoot>tr>th,
+    .table>tfoot>tr>td {
+        padding: 8px 0 !important; // line-height: 1.42857;
+        // vertical-align: top;
+        // border-top: 1px solid #ddd;
+    }
+}
+
+ul.facilities-level-listing {
+    padding: 0px;
+    margin: 0px;
+    li {
+        list-style-type: none;
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 12px;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            border-bottom: 0px;
+        }
+    }
+}
+table#facilities{
+    border-top: 1px solid #eee;
+}
+#facilities_length{
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**
+     * ------------------------------------------------------------
+     * Branches
+     * ------------------------------------------------------------
+*/
+
+.branches-listing {
+
+    li {
+        border-top: 1px solid #ddd;
+        padding: 15px;
+        &:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        p {
+            margin: 0px;
+        }
+    }
+}
+
+
+
+
+
+/**
+     * ------------------------------------------------------------
+     * Announcements
+     * ------------------------------------------------------------
+*/
+
+.announcements-listing {
+    li {
+        h4 {
+            margin: 0;
+            font-size: $font-size-base;
+        }
+        border-bottom: 1px solid $border-color;
+        margin-bottom: 10px;
+        padding-bottom: 12px;
+        span {
+            display: block;
+        }
+    }
+}

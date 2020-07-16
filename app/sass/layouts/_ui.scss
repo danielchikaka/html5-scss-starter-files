@@ -1,0 +1,139 @@
+/**
+* ------------------------------------------------------------
+* UI
+* ------------------------------------------------------------
+*/
+    .btn {
+        @include borderRadius(2px);
+        // border-bottom: 3px solid darken($brand-primary, 0.8%);
+    }
+    
+
+    
+    .btn-primary {
+        color: #fff;
+        border: 0px solid;
+        &:hover {
+            color: #fff;
+            background-color: $addon-color;
+            border-color: transparent;
+        }
+    }
+
+
+     hr {
+        border-color: $border-color;
+    }
+    
+    .view-more {
+        color: $gray-base;
+        font-size: $font-size-base;
+        text-transform: lowercase;
+        font-weight: 600;
+        &:hover {
+            color: $link-hover-color;
+        }
+    }
+    
+    .icon {
+        position: relative;
+        top: 2px;
+        right: 5px;
+    }
+    
+
+    .bt-none {
+        border-top: none !important;
+    }
+    
+    .date {
+        font-size: 12px;
+        margin-bottom: 5px;
+        color: #000;
+        display: block;
+        font-weight: 600;
+        // font-family: Georgia;
+        .icon-calendar {
+            top: 1px;
+            position: relative;
+        }
+    }
+    
+    #pagination-wrapper {
+        text-align: center;
+        border-top: 2px solid #eee;
+    }
+
+
+
+    /**
+    * ------------------------------------------------------------
+    * Here comes carets snippet
+    * ------------------------------------------------------------
+*/
+    
+    .arrow-up {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid black;
+    }
+    
+    .arrow-down {
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #f00;
+    }
+    
+    .arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid green;
+    }
+    
+    .arrow-left {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid blue;
+    }
+    /**
+     * ------------------------------------------------------------
+     * Preloader
+     * ------------------------------------------------------------
+*/
+    /* Preloader */
+    
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        /* change if the mask should have another color then white */
+        z-index: 99;
+        /* makes sure it stays on top */
+    }
+    
+    #status {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        /* centers the loading animation horizontally one the screen */
+        top: 50%;
+        /* centers the loading animation vertically one the screen */
+        // background-image: url(../images/status.gif);
+        /* path to your loading animation */
+        // background-repeat: no-repeat;
+        // background-position: center;
+        margin: -100px 0 0 -100px;
+        /* is width and height divided by two */
+    }

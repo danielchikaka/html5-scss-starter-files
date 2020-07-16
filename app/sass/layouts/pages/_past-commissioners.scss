@@ -1,0 +1,30 @@
+/**
+     * ------------------------------------------------------------
+     * Past Commissioners
+     * ------------------------------------------------------------
+*/
+
+ul.past-commissioners-listing {
+    padding: 0;
+    li {
+        list-style-type: none;
+        position: relative;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        background-color: #f2f2f2;
+        background-color: #f2f2f2;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+        img {
+            float: left;
+            margin: -1px 15px -1px -1px;
+        }
+        h4 {
+            margin-top: 50px;
+            font-size: $font-size-base + 3;
+        }
+    }
+}
