@@ -7,8 +7,10 @@
  */
 
 @import '../../node_modules/susy/sass/susy';
-@import 'bootstrap';
-@import 'bootstrap-variables';
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-utilities.scss';
+@import 'variables';
 @import 'layouts/mixins';
 // @import "layouts/grid";
 // @import "layouts/base";

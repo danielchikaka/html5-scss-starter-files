@@ -6,7 +6,7 @@ const cssnano = require('gulp-cssnano');
 const { init, write } = require('gulp-sourcemaps');
 const gulpif = require('gulp-if');
 const nunjucksRender = require('gulp-nunjucks-render');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 
 function sassTask() {
   return src('app/sass/**/*.scss')
@@ -106,6 +106,7 @@ exports.images = imagesTask;
 exports.useref = userefTask;
 exports.sass = sassTask;
 exports.nunjucks = nunjucksTask;
+exports.nodeModulesTask = nodeModulesTask;
 exports.default = series(
   sassTask,
   nunjucksTask,

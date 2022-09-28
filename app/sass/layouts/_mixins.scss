@@ -104,7 +104,7 @@
     }
 }
 
-$browser-context: $font-size-base; // Default
-@function em($pixels, $context: $browser-context) {
-    @return #{$pixels/$context}em;
-}
+// $browser-context: $font-size-base; // Default
+// @function em($pixels, $context: $browser-context) {
+//     @return #{$pixels/$context}em;
+// }
